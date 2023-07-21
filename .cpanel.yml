@@ -1,5 +1,0 @@
----
-deployment:
- tasks:
- - export DEPLOYPATH=/home/bind3376/public_html/preview.binarykiddo.com
- - /usr/bin/rsync -Paz * $DEPLOYPATH --delete
