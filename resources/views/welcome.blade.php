@@ -65,7 +65,7 @@
             </div>
         </header>
 
-        <nav class="navbar navbar-expand-lg bg-light shadow-lg">
+        <nav class="navbar navbar-expand-lg bg-light ">
             <div class="container">
                 <a class="navbar-brand" href="index.html">
                     <img src="logo.png" class="logo img-fluid" alt="Kind Heart Charity">
@@ -89,8 +89,23 @@
                             <a class="nav-link click-scroll" href="#section_2">About</a>
                         </li>
 
-                        <li class="nav-item">
+                        {{-- <li class="nav-item">
                             <a class="nav-link click-scroll" href="#section_3">Program</a>
+                        </li> --}}
+                        <li class="nav-item dropdown">
+                            <a class="nav-link click-scroll dropdown-toggle" href="#section_3" id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Class</a>
+
+                            <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
+                                <li><a class="dropdown-item" href="news.html">Coding Block Class</a></li>
+                                <li><a class="dropdown-item" href="news-detail.html">Design Class </a></li>
+
+                                <li><a class="dropdown-item" href="">Office & Business ADm Class  </a></li>
+                                <li><a class="dropdown-item" href="">Acceleration Class  </a></li>
+                                <li><a class="dropdown-item" href="">Coding Block Class</a></li>
+                                <li><a class="dropdown-item" href="">Game Class  </a></li>
+                                <li><a class="dropdown-item" href="">Phyton Class</a></li>
+                                
+                            </ul>
                         </li>
 
                         <li class="nav-item">
@@ -294,10 +309,6 @@
                         <div class="col-lg-12 col-12 text-center mb-4">
                             <h2>Class Program</h2>
                         </div>
-                        <div class="col-12 text-center">
-                            <span class="badge bg-info col-2 p-2 mb-3 zoom-in-zoom-out"> <b>Coding Block Class</b> </span>
-                        </div>
-
                         @foreach ($kelas as $data)
                         <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
                             <div class="custom-block-wrap">
@@ -305,9 +316,10 @@
                                 <div class="custom-block">
                                     <div class="custom-block-body">
                                         <h5 class="mb-3">{{$data->title}}</h5>
+                                        
 
                                         {!!Str::limit($data->body, 50)!!}
-
+                                        <span class="badge rounded-pill text-bg-warning">{{$data->kategori}}</span>
                                     </div>
 
                                     <a href="donate.html" class="custom-btn btn">read more..</a>
@@ -325,7 +337,9 @@
             <section class="volunteer-section section-padding" id="section_4">
                 <div class="container">
                     <div class="row">
-
+                        <div class="col-lg-12 col-12 text-center mb-4">
+                            <h2  class="text-white mb-4">Partners</h2>
+                        </div>
                         <div class="col-lg-6 col-12">
                             <h2 class="text-white mb-4">Volunteer</h2>
 
