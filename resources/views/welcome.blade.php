@@ -309,7 +309,7 @@
                         <div class="col-lg-12 col-12 text-center mb-4">
                             <h2>Class Program</h2>
                         </div>
-                        @foreach ($kelas as $data)
+                        {{-- @foreach ($kelas as $data)
                         <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
                             <div class="custom-block-wrap">
                                 <img src="/storage/{{$data->picture}}" class="custom-block-image img-fluid" alt="">
@@ -327,7 +327,7 @@
                             </div>
                         </div>
                         @endforeach
-                        
+                         --}}
 
 
                     </div>
