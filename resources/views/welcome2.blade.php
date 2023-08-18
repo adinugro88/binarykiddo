@@ -15,8 +15,7 @@
     <link rel="stylesheet" href="{{asset('binary/assets/css/swiper.min.css')}}">
     <link rel="stylesheet" href="{{asset('binary/assets/css/lightcase.css')}}">
     <link rel="stylesheet" href="{{asset('binary/assets/css/style.css')}}">
-
-
+    
     <style>
         .banner-section {
   background-image: url(bgbanner.jpg);
@@ -156,13 +155,13 @@
                             <h6 class="subtitle text-uppercase fw-medium">Online education</h6>
                             <h2 class="title"><span class="d-lg-block">Learn The</span> Skills You Need <span class="d-lg-block">To Succeed</span></h2>
                             <p class="desc">Free online courses from the world’s Leading experts. join 18+ million Learners today.</p>
-                            <form action="/">
+                            {{-- <form action="/">
                                 <div class="banner-icon">
                                     <i class="icofont-search"></i>
                                 </div>
                                 <input type="text" placeholder="Keywords of your course">
                                 <button type="submit">Search Course</button>
-                            </form>
+                            </form> --}}
                             <div class="banner-catagory d-flex flex-wrap">
                                 <p>Most Popular : </p>
                                 <ul class="lab-ul d-flex flex-wrap">
