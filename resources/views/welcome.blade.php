@@ -3,8 +3,11 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="{{setting('site.description')}}">
+        
+        <title>{{setting('site.title')}}</title>
 
-        <title>Binarykiddo</title>
+        <link rel="icon" href="{{setting('site.logo')}}"  type="image/png" > 
         <!-- CSS FILES -->        
         <link href="{{asset("asset/css/bootstrap.min.css")}}" rel="stylesheet">
 
@@ -294,7 +297,6 @@
 
                             <a href="#section_4" class="custom-btn btn smoothscroll">Whatsapp Customer Service</a>
                         </div>
-
                     </div>
                 </div>
             </section>
