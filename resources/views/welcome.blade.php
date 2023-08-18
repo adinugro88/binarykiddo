@@ -302,27 +302,23 @@
             </section>
 
 
-            <section class="section-padding" id="section_3">
+            <section class="section-padding bg-gray" id="section_3">
                 <div class="container">
                     <div class="row">
 
                         <div class="col-lg-12 col-12 text-center mb-4">
-                            <h2>Class Program</h2>
+                            <h2>Program</h2>
                         </div>
                         @foreach ($program as $data)
-                        <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0">
+                        <div class="col-lg-3 col-md-6 col-12 mb-4 mb-lg-0 mb-3">
                             <div class="custom-block-wrap">
                                 <img src="/storage/{{$data->picture}}" class="custom-block-image img-fluid" alt="">
                                 <div class="custom-block">
                                     <div class="custom-block-body">
                                         <h5 class="mb-3">{{$data->title}}</h5>
-                                        
-
                                         {!!Str::limit($data->body, 50)!!}
-                                        <span class="badge rounded-pill text-bg-warning">{{$data->kategori}}</span>
                                     </div>
-
-                                    <a href="donate.html" class="custom-btn btn">read more..</a>
+                                    <a href="donate.html" class="custom-btn btn">{{$data->kategori}}</a>
                                 </div>
                             </div>
                         </div>

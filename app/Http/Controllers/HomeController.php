@@ -22,9 +22,9 @@ class HomeController extends Controller
         $banner = Banner::orderBy('id', 'ASC')->get();
         $point = Point::orderBy('id', 'ASC')->get();
         $founder = Founder::all();
-       $program = Kelas::where("show","yes")->get();
-        //  dd($kelas);
-        return view('welcome', compact('about','banner','point','founder','program'));
+        $program = Kelas::where("show","show")->get();
+        //dd($kelas);
+        return view('welcome2', compact('about','banner','point','founder','program'));
     }
 
     /**
