@@ -7,14 +7,13 @@
         
     <title>{{setting('site.title')}}</title>
 
-    <link rel="shortcut icon" href="{{setting('site.logo')}}" type="image/x-icon" > 
-    
-    <link rel="stylesheet" href="{{asset('binary/assets/css/animate.css')}}">
-    <link rel="stylesheet" href="{{asset('binary/assets/css/bootstrap.min.css')}}">
-    <link rel="stylesheet" href="{{asset('binary/assets/css/icofont.min.css')}}">
-    <link rel="stylesheet" href="{{asset('binary/assets/css/swiper.min.css')}}">
-    <link rel="stylesheet" href="{{asset('binary/assets/css/lightcase.css')}}">
-    <link rel="stylesheet" href="{{asset('binary/assets/css/style.css')}}">
+    <link rel="shortcut icon" href="{{  Voyager::image(setting('site.logo'))}}" type="image/x-icon" > 
+    <link rel="stylesheet" href="{{asset('assets/css/animate.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/css/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/css/icofont.min.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/css/swiper.min.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/css/lightcase.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/css/style.css')}}">
     
     <style>
         .banner-section {
@@ -23,128 +22,8 @@
     </style>
 </head>
 <body>
-    <!-- preloader start here -->
-    <div class="preloader">
-        <div class="preloader-inner">
-            <div class="preloader-icon">
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </div>
-    <!-- preloader ending here -->
 
-
-    <!-- scrollToTop start here -->
-    <a href="#" class="scrollToTop"><i class="icofont-rounded-up"></i></a>
-    <!-- scrollToTop ending here -->
-
-
-    <!-- header section start here -->
-    <header class="header-section">
-        <div class="header-top">
-            <div class="container">
-                <div class="header-top-area">
-                    <ul class="lab-ul left">
-                        <li>
-                            <i class="icofont-ui-call"></i> <span>+800-123-4567 6587</span>
-                        </li>
-                        <li>
-                            <i class="icofont-location-pin"></i> Beverley, New York 224 USA
-                        </li>
-                    </ul>
-                    <ul class="lab-ul social-icons d-flex align-items-center">
-                        <li><p>Find us on : </p></li>
-                        <li><a href="#" class="fb"><i class="icofont-facebook-messenger"></i></a></li>
-                        <li><a href="#" class="twitter"><i class="icofont-twitter"></i></a></li>
-                        <li><a href="#" class="vimeo"><i class="icofont-vimeo"></i></a></li>
-                        <li><a href="#" class="skype"><i class="icofont-skype"></i></a></li>
-                        <li><a href="#" class="rss"><i class="icofont-rss-feed"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="header-bottom">
-            <div class="container">
-                <div class="header-wrapper">
-                    <div class="logo">
-                        <a href="index.html"><img src="assets/images/logo/01.png" alt="logo"></a>
-                    </div>
-                    <div class="menu-area">
-                        <div class="menu">
-                            <ul class="lab-ul">
-                                <li>
-                                    <a href="#0">Home</a>
-                                    <ul class="lab-ul">
-                                        <li><a href="index.html" class="active">Home One</a></li>
-                                        <li><a href="index-2.html">Home Two</a></li>
-                                        <li><a href="index-3.html">Home Three</a></li>
-                                        <li><a href="index-4.html">Home Four</a></li>
-                                        <li><a href="index-5.html">Home Five</a></li>
-                                        <li><a href="index-6.html">Home Six</a></li>
-                                        <li><a href="index-7.html">Home Seven</a></li>
-                                    </ul>
-                                </li>
-                                
-                                <li>
-                                    <a href="#0">Courses</a>
-                                    <ul class="lab-ul">
-                                        <li><a href="course.html">Course</a></li>
-                                        <li><a href="course-single.html">Course Details</a></li>
-    
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="#0">Blog</a>
-                                    <ul class="lab-ul">
-                                        <li><a href="blog.html">Blog Grid</a></li>
-                                        <li><a href="blog-2.html">Blog Style 2</a></li>
-                                        <li><a href="blog-3.html">Blog Style 3</a></li>
-                                        <li><a href="blog-single.html">Blog Single</a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="#0">Pages</a>
-                                    <ul class="lab-ul">
-                                        <li><a href="about.html">About</a></li>
-                                        <li><a href="team.html">Team</a></li>
-                                        <li><a href="instructor.html">Instructor</a></li>
-                                        <li>
-                                            <a href="#0">Shop Pages</a>
-                                            <ul class="lab-ul">
-                                                <li><a href="shop.html">Shop Page</a></li>
-                                                <li><a href="shop-single.html">Shop Details Page</a></li>
-                                                <li><a href="cart-page.html">Shop Cart Page</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="search-page.html">Search Page</a></li>
-                                        <li><a href="search-none.html">Search None</a></li>
-                                        <li><a href="404.html">404</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="contact.html">Contact</a></li>
-                            </ul>
-                        </div>
-                        
-                        <a href="login.html" class="login"><i class="icofont-user"></i> <span>LOG IN</span> </a>
-                        <a href="signup.html" class="signup"><i class="icofont-users"></i> <span>SIGN UP</span> </a>
-
-                        <!-- toggle icons -->
-                        <div class="header-bar d-lg-none">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
-                        <div class="ellepsis-bar d-lg-none">
-                            <i class="icofont-info-square"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-    <!-- header section ending here -->
-
+    @include('layout.header')
     <!-- banner section start here -->
     <section class="banner-section style-1">
         <div class="container">
@@ -154,7 +33,7 @@
                         <div class="banner-content">
                             <h6 class="subtitle text-uppercase fw-medium">Online education</h6>
                             <h2 class="title"><span class="d-lg-block">Learn The</span> Skills You Need <span class="d-lg-block">To Succeed</span></h2>
-                            <p class="desc">Free online courses from the world’s Leading experts. join 18+ million Learners today.</p>
+                            <button class="btn btn-success">Contact Us Now</button>
                             {{-- <form action="/">
                                 <div class="banner-icon">
                                     <i class="icofont-search"></i>
@@ -1315,13 +1194,13 @@
     </div>
     <!-- footer -->
 
-    <script src="{{asset('binary/assets/js/jquery.js')}}"></script>
-    <script src="{{asset('binary/assets/js/bootstrap.min.js')}}"></script>
-    <script src="{{asset('binary/assets/js/swiper.min.js')}}"></script>
-    <script src="{{asset('binary/assets/js/progress.js')}}"></script>
-    <script src="{{asset('binary/assets/js/lightcase.js')}}"></script>
-    <script src="{{asset('binary/assets/js/counter-up.js')}}"></script>
-    <script src="{{asset('binary/assets/js/isotope.pkgd.js')}}"></script>
-    <script src="{{asset('binary/assets/js/functions.js')}}"></script>
+    <script src="{{asset('assets/js/jquery.js')}}"></script>
+    <script src="{{asset('assets/js/bootstrap.min.js')}}"></script>
+    <script src="{{asset('assets/js/swiper.min.js')}}"></script>
+    <script src="{{asset('assets/js/progress.js')}}"></script>
+    <script src="{{asset('assets/js/lightcase.js')}}"></script>
+    <script src="{{asset('assets/js/counter-up.js')}}"></script>
+    <script src="{{asset('assets/js/isotope.pkgd.js')}}"></script>
+    <script src="{{asset('assets/js/functions.js')}}"></script>
 </body>
 </html>

@@ -8,6 +8,7 @@ use App\Models\Banner;
 use App\Models\Point;
 use App\Models\Founder;
 use App\Models\Kelas;
+use App\Models\Contact;
 
 class HomeController extends Controller
 {
@@ -22,9 +23,10 @@ class HomeController extends Controller
         $banner = Banner::orderBy('id', 'ASC')->get();
         $point = Point::orderBy('id', 'ASC')->get();
         $founder = Founder::all();
+        $contact = Contact::First();
         $program = Kelas::where("show","show")->get();
         //dd($kelas);
-        return view('welcome2', compact('about','banner','point','founder','program'));
+        return view('welcome2', compact('about','banner','point','founder','program','contact'));
     }
 
     /**
