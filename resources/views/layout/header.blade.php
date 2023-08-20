@@ -62,12 +62,17 @@
                                     <a href="#0">Courses</a>
                                     
                                 </li>
+                               
                                 <li><a href="contact.html">Contact</a></li>
+                                <li>
+                                    <a href="#0">Career</a>
+                                    
+                                </li>
                             </ul>
                         </div>
                         
                         <a href="login.html" class="login"><i class="icofont-user"></i> <span>LOG IN</span> </a>
-                        <a href="signup.html" class="signup"><i class="icofont-users"></i> <span>SIGN UP</span> </a>
+                        {{-- <a href="signup.html" class="signup"><i class="icofont-users"></i> <span>SIGN UP</span> </a> --}}
 
                         <!-- toggle icons -->
                         <div class="header-bar d-lg-none">
