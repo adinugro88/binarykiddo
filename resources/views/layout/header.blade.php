@@ -10,7 +10,7 @@
     <!-- preloader ending here -->
 
 
-    <!-- scrollToTop start here -->
+    <!-- scrollToTop start here update -->
     <a href="#" class="scrollToTop"><i class="icofont-rounded-up"></i></a>
     <!-- scrollToTop ending here -->
 
