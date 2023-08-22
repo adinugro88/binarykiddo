@@ -1,26 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="{{setting('site.description')}}">
-        
+
     <title>{{setting('site.title')}}</title>
 
-    <link rel="shortcut icon" href="{{  Voyager::image(setting('site.logo'))}}" type="image/x-icon" > 
+    <link rel="shortcut icon" href="{{  Voyager::image(setting('site.logo'))}}" type="image/x-icon">
     <link rel="stylesheet" href="{{asset('assets/css/animate.css')}}">
     <link rel="stylesheet" href="{{asset('assets/css/bootstrap.min.css')}}">
     <link rel="stylesheet" href="{{asset('assets/css/icofont.min.css')}}">
     <link rel="stylesheet" href="{{asset('assets/css/swiper.min.css')}}">
     <link rel="stylesheet" href="{{asset('assets/css/lightcase.css')}}">
     <link rel="stylesheet" href="{{asset('assets/css/style.css')}}">
-    
+
     <style>
         .banner-section {
             background-image: url(bgbanner.jpg);
         }
+
     </style>
 </head>
+
 <body>
 
     @include('layout.header')
@@ -32,8 +35,10 @@
                     <div class="col-xxl-5 col-xl-6 col-lg-10">
                         <div class="banner-content">
                             <h6 class="subtitle text-uppercase fw-medium">Online education</h6>
-                            <h2 class="title"><span class="d-lg-block">Learn The</span> Skills You Need <span class="d-lg-block">To Succeed</span></h2>
-                            <button class="btn btn-success"><i class="icofont-whatsapp"></i> <span>Contact Us Now</button>
+                            <h2 class="title"><span class="d-lg-block">Learn The</span> Skills You Need <span
+                                    class="d-lg-block">To Succeed</span></h2>
+                            <button class="btn primarycolor"><i class="icofont-whatsapp"></i> <span>Contact Us
+                                    Now</button>
                             {{-- <form action="/">
                                 <div class="banner-icon">
                                     <i class="icofont-search"></i>
@@ -41,7 +46,7 @@
                                 <input type="text" placeholder="Keywords of your course">
                                 <button type="submit">Search Course</button>
                             </form> --}}
-                            
+
                         </div>
                     </div>
                     <div class="col-xxl-7 col-xl-6">
@@ -76,7 +81,8 @@
                         <div class="swiper-slide">
                             <div class="sponsor-iten">
                                 <div class="sponsor-thumb">
-                                    <img width="80" class="" src="{{Voyager::image($data->image)}}" alt="{{$data->keterangan}}">
+                                    <img width="80" class="" src="{{Voyager::image($data->image)}}"
+                                        alt="{{$data->keterangan}}">
                                 </div>
                             </div>
                         </div>
@@ -90,20 +96,21 @@
 
 
 
+  
     <!-- category section start here -->
-    <div class="category-section padding-tb  style-2">
+    <div class="category-section padding-tb">
         <div class="container">
             <div class="section-header text-center">
                 <span class="subtitle">Popular Category</span>
                 <h2 class="title">Popular Category For Learn</h2>
             </div>
             <div class="section-wrapper">
-                <div class="row g-4 justify-content-center row-cols-xl-4 row-cols-lg-3 row-cols-sm-2 row-cols-1">
+                <div class="row g-2 justify-content-center row-cols-xl-6 row-cols-md-3 row-cols-sm-2 row-cols-1">
                     <div class="col">
                         <div class="category-item text-center">
                             <div class="category-inner">
                                 <div class="category-thumb">
-                                    <img src="assets/images/category/icon/07.jpg" alt="category">
+                                    <img src="assets/images/category/icon/01.jpg" alt="category">
                                 </div>
                                 <div class="category-content">
                                     <a href="course.html"><h6>Computer Science</h6></a>
@@ -116,11 +123,11 @@
                         <div class="category-item text-center">
                             <div class="category-inner">
                                 <div class="category-thumb">
-                                    <img src="assets/images/category/icon/08.jpg" alt="category">
+                                    <img src="assets/images/category/icon/02.jpg" alt="category">
                                 </div>
                                 <div class="category-content">
                                     <a href="course.html"><h6>Civil Engineering</h6></a>
-                                    <span>63 Course</span>
+                                    <span>40 Course</span>
                                 </div>
                             </div>
                         </div>
@@ -129,11 +136,11 @@
                         <div class="category-item text-center">
                             <div class="category-inner">
                                 <div class="category-thumb">
-                                    <img src="assets/images/category/icon/09.jpg" alt="category">
+                                    <img src="assets/images/category/icon/03.jpg" alt="category">
                                 </div>
                                 <div class="category-content">
                                     <a href="course.html"><h6>Business Analysis</h6></a>
-                                    <span>63 Course</span>
+                                    <span>27 Course</span>
                                 </div>
                             </div>
                         </div>
@@ -142,11 +149,11 @@
                         <div class="category-item text-center">
                             <div class="category-inner">
                                 <div class="category-thumb">
-                                    <img src="assets/images/category/icon/10.jpg" alt="category">
+                                    <img src="assets/images/category/icon/04.jpg" alt="category">
                                 </div>
                                 <div class="category-content">
                                     <a href="course.html"><h6>Data Science Analytics</h6></a>
-                                    <span>65 Course</span>
+                                    <span>28 Course</span>
                                 </div>
                             </div>
                         </div>
@@ -155,7 +162,7 @@
                         <div class="category-item text-center">
                             <div class="category-inner">
                                 <div class="category-thumb">
-                                    <img src="assets/images/category/icon/11.jpg" alt="category">
+                                    <img src="assets/images/category/icon/05.jpg" alt="category">
                                 </div>
                                 <div class="category-content">
                                     <a href="course.html"><h6>Learning Management</h6></a>
@@ -168,37 +175,131 @@
                         <div class="category-item text-center">
                             <div class="category-inner">
                                 <div class="category-thumb">
-                                    <img src="assets/images/category/icon/12.jpg" alt="category">
+                                    <img src="assets/images/category/icon/06.jpg" alt="category">
                                 </div>
                                 <div class="category-content">
                                     <a href="course.html"><h6>Computer Engineering</h6></a>
-                                    <span>92 Course</span>
+                                    <span>38 Course</span>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="category-item text-center">
-                            <div class="category-inner">
-                                <div class="category-thumb">
-                                    <img src="assets/images/category/icon/13.jpg" alt="category">
-                                </div>
-                                <div class="category-content">
-                                    <a href="course.html"><h6>Design Architect</h6></a>
-                                    <span>68 Course</span>
+                </div>
+                <div class="text-center mt-5">
+                    <a href="course.html" class="lab-btn"><span>Browse All Categories</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- category section start here -->
+
+    <!-- Course Section Start Here -->
+    <div class="course-section style-2 padding-tb section-bg-ash yellow-color-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="subtitle yellow-color">Don’t Miss</span>
+                <h2 class="title">Lincon’s Courses</h2>
+                <div class="course-navigations">
+                    <div class="course-navi course-navi-next"><i class="icofont-double-left"></i></div>
+                    <div class="course-navi course-navi-prev"><i class="icofont-double-right"></i></div>
+                </div>
+            </div>
+            <div class="section-wrapper">
+                <div class="course-slider p-2">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="course-item style-3">
+                                <div class="course-inner text-center">
+                                    <div class="course-thumb">
+                                        <img src="assets/images/course/13.jpg" alt="course">
+                                        <ul class="course-info lab-ul">
+                                            <li><span class="course-name">Web Design</span></li>
+                                            <li><span class="price">$19.00</span></li>
+                                            <li>
+                                                <span class="ratting">
+                                                    <i class="icofont-ui-rate-blank"></i>
+                                                    <i class="icofont-ui-rate-blank"></i>
+                                                    <i class="icofont-ui-rate-blank"></i>
+                                                    <i class="icofont-ui-rate-blank"></i>
+                                                    <i class="icofont-ui-rate-blank"></i>
+                                                </span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="course-content">
+                                        <a href="course-single.html">
+                                            <h4>Learn Basic Web Design with HTML & CSS</h4>
+                                        </a>
+                                        <div class="course-details">
+                                            <div class="couse-count"><i class="icofont-users-alt-3"></i> 200</div>
+                                            <div class="couse-topic"><i class="icofont-speech-comments"></i> 23</div>
+                                        </div>
+                                        <a href="course-single.html" class="lab-btn"><span>Read More</span></a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col">
-                        <div class="category-item text-center">
-                            <div class="category-inner">
-                                <div class="category-thumb">
-                                    <img src="assets/images/category/icon/14.jpg" alt="category">
+                        <div class="swiper-slide">
+                            <div class="course-item style-3">
+                                <div class="course-inner text-center">
+                                    <div class="course-thumb">
+                                        <img src="assets/images/course/14.jpg" alt="course">
+                                        <ul class="course-info lab-ul">
+                                            <li><span class="course-name">PHP</span></li>
+                                            <li><span class="price">Free</span></li>
+                                            <li>
+                                                <span class="ratting">
+                                                    <i class="icofont-ui-rate-blank"></i>
+                                                    <i class="icofont-ui-rate-blank"></i>
+                                                    <i class="icofont-ui-rate-blank"></i>
+                                                    <i class="icofont-ui-rate-blank"></i>
+                                                    <i class="icofont-ui-rate-blank"></i>
+                                                </span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="course-content">
+                                        <a href="course-single.html">
+                                            <h4>Learn Basic Web Design with HTML & CSS</h4>
+                                        </a>
+                                        <div class="course-details">
+                                            <div class="couse-count"><i class="icofont-users-alt-3"></i> 200</div>
+                                            <div class="couse-topic"><i class="icofont-speech-comments"></i> 23</div>
+                                        </div>
+                                        <a href="course-single.html" class="lab-btn"><span>Read More</span></a>
+                                    </div>
                                 </div>
-                                <div class="category-content">
-                                    <a href="course.html"><h6>Foreign Language</h6></a>
-                                    <span>48 Course</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="course-item style-3">
+                                <div class="course-inner text-center">
+                                    <div class="course-thumb">
+                                        <img src="assets/images/course/15.jpg" alt="course">
+                                        <ul class="course-info lab-ul">
+                                            <li><span class="course-name">English</span></li>
+                                            <li><span class="price">$19.00</span></li>
+                                            <li>
+                                                <span class="ratting">
+                                                    <i class="icofont-ui-rate-blank"></i>
+                                                    <i class="icofont-ui-rate-blank"></i>
+                                                    <i class="icofont-ui-rate-blank"></i>
+                                                    <i class="icofont-ui-rate-blank"></i>
+                                                    <i class="icofont-ui-rate-blank"></i>
+                                                </span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="course-content">
+                                        <a href="course-single.html">
+                                            <h4>Learn Basic Web Design with HTML & CSS</h4>
+                                        </a>
+                                        <div class="course-details">
+                                            <div class="couse-count"><i class="icofont-users-alt-3"></i> 200</div>
+                                            <div class="couse-topic"><i class="icofont-speech-comments"></i> 23</div>
+                                        </div>
+                                        <a href="course-single.html" class="lab-btn"><span>Read More</span></a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -207,9 +308,9 @@
             </div>
         </div>
     </div>
-    <!-- category section start here -->
+    <!-- Course Section Ending Here -->
 
-    
+
     <!-- student feedbak section start here -->
     <div class="student-feedbak-section padding-tb shape-img">
         <div class="container">
@@ -223,7 +324,8 @@
                         <div class="sf-left">
                             <div class="sfl-thumb">
                                 <img src="assets/images/feedback/01.jpg" alt="student feedback">
-                                <a href="https://www.youtube-nocookie.com/embed/jP649ZHA8Tg" class="video-button" data-rel="lightcase"><i class="icofont-ui-play"></i></a>
+                                <a href="https://www.youtube-nocookie.com/embed/jP649ZHA8Tg" class="video-button"
+                                    data-rel="lightcase"><i class="icofont-ui-play"></i></a>
                             </div>
                         </div>
                     </div>
@@ -236,7 +338,9 @@
                                             <img src="assets/images/feedback/student/01.jpg" alt="student feedback">
                                         </div>
                                         <div class="sftl-content">
-                                            <a href="#"><h6>Oliver Beddows</h6></a>
+                                            <a href="#">
+                                                <h6>Oliver Beddows</h6>
+                                            </a>
                                             <span>UX designer</span>
                                         </div>
                                     </div>
@@ -251,7 +355,9 @@
                                     </div>
                                 </div>
                                 <div class="stu-feed-bottom">
-                                    <p>Rapidiously buildcollaboration anden deas sharing viaing and with bleedng edgeing nterfaces fnergstcally plagiarize teams anbuling paradgms whereas goingi forward process and monetze</p>
+                                    <p>Rapidiously buildcollaboration anden deas sharing viaing and with bleedng edgeing
+                                        nterfaces fnergstcally plagiarize teams anbuling paradgms whereas goingi forward
+                                        process and monetze</p>
                                 </div>
                             </div>
                         </div>
@@ -263,7 +369,9 @@
                                             <img src="assets/images/feedback/student/02.jpg" alt="student feedback">
                                         </div>
                                         <div class="sftl-content">
-                                            <a href="#"><h6>Madley Pondor</h6></a>
+                                            <a href="#">
+                                                <h6>Madley Pondor</h6>
+                                            </a>
                                             <span>UX designer</span>
                                         </div>
                                     </div>
@@ -278,7 +386,9 @@
                                     </div>
                                 </div>
                                 <div class="stu-feed-bottom">
-                                    <p>Rapidiously buildcollaboration anden deas sharing viaing and with bleedng edgeing nterfaces fnergstcally plagiarize teams anbuling paradgms whereas goingi forward process and monetze</p>
+                                    <p>Rapidiously buildcollaboration anden deas sharing viaing and with bleedng edgeing
+                                        nterfaces fnergstcally plagiarize teams anbuling paradgms whereas goingi forward
+                                        process and monetze</p>
                                 </div>
                             </div>
                         </div>
@@ -289,200 +399,75 @@
     </div>
     <!-- student feedbak section ending here -->
 
-    <!-- Instructors Section Start Here -->
-    <div class="instructor-section padding-tb section-bg">
-        <div class="container">
-            <div class="section-header text-center">
-                <span class="subtitle">World-class Instructors</span>
-                <h2 class="title">Classes Taught By Real Creators</h2>
-            </div>
-            <div class="section-wrapper">
-                <div class="row g-4 justify-content-center row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-4">
-                    <div class="col">
-                        <div class="instructor-item">
-                            <div class="instructor-inner">
-                                <div class="instructor-thumb">
-                                    <img src="assets/images/instructor/01.jpg" alt="instructor">
-                                </div>
-                                <div class="instructor-content">
-                                    <a href="team.html"><h4>Emilee Logan</h4></a>
-                                    <p>Master of Education Degree</p>
-                                    <span class="ratting">
-                                        <i class="icofont-ui-rating"></i>
-                                        <i class="icofont-ui-rating"></i>
-                                        <i class="icofont-ui-rating"></i>
-                                        <i class="icofont-ui-rating"></i>
-                                        <i class="icofont-ui-rating"></i>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="instructor-footer">
-                                <ul class="lab-ul d-flex flex-wrap justify-content-between align-items-center">
-                                    <li><i class="icofont-book-alt"></i> 08 courses</li>
-                                    <li><i class="icofont-users-alt-3"></i> 30 students</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="instructor-item">
-                            <div class="instructor-inner">
-                                <div class="instructor-thumb">
-                                    <img src="assets/images/instructor/02.jpg" alt="instructor">
-                                </div>
-                                <div class="instructor-content">
-                                    <a href="team.html"><h4>Donald Logan</h4></a>
-                                    <p>Master of Education Degree</p>
-                                    <span class="ratting">
-                                        <i class="icofont-ui-rating"></i>
-                                        <i class="icofont-ui-rating"></i>
-                                        <i class="icofont-ui-rating"></i>
-                                        <i class="icofont-ui-rating"></i>
-                                        <i class="icofont-ui-rating"></i>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="instructor-footer">
-                                <ul class="lab-ul d-flex flex-wrap justify-content-between align-items-center">
-                                    <li><i class="icofont-book-alt"></i> 08 courses</li>
-                                    <li><i class="icofont-users-alt-3"></i> 30 students</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="instructor-item">
-                            <div class="instructor-inner">
-                                <div class="instructor-thumb">
-                                    <img src="assets/images/instructor/03.jpg" alt="instructor">
-                                </div>
-                                <div class="instructor-content">
-                                    <a href="team.html"><h4>Oliver Porter</h4></a>
-                                    <p>Master of Education Degree</p>
-                                    <span class="ratting">
-                                        <i class="icofont-ui-rating"></i>
-                                        <i class="icofont-ui-rating"></i>
-                                        <i class="icofont-ui-rating"></i>
-                                        <i class="icofont-ui-rating"></i>
-                                        <i class="icofont-ui-rating"></i>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="instructor-footer">
-                                <ul class="lab-ul d-flex flex-wrap justify-content-between align-items-center">
-                                    <li><i class="icofont-book-alt"></i> 08 courses</li>
-                                    <li><i class="icofont-users-alt-3"></i> 30 students</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="instructor-item">
-                            <div class="instructor-inner">
-                                <div class="instructor-thumb">
-                                    <img src="assets/images/instructor/04.jpg" alt="instructor">
-                                </div>
-                                <div class="instructor-content">
-                                    <a href="team.html"><h4>Nahla Jones</h4></a>
-                                    <p>Master of Education Degree</p>
-                                    <span class="ratting">
-                                        <i class="icofont-ui-rating"></i>
-                                        <i class="icofont-ui-rating"></i>
-                                        <i class="icofont-ui-rating"></i>
-                                        <i class="icofont-ui-rating"></i>
-                                        <i class="icofont-ui-rating"></i>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="instructor-footer">
-                                <ul class="lab-ul d-flex flex-wrap justify-content-between align-items-center">
-                                    <li><i class="icofont-book-alt"></i> 08 courses</li>
-                                    <li><i class="icofont-users-alt-3"></i> 30 students</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="text-center footer-btn">
-                    <p>Want to help people learn, grow and achieve more in life?<a href="team.html">Become an instructor</a></p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Instructors Section Ending Here -->
+    <!-- instructor Single Section Starts Here -->
+    <section class="instructor-single-section padding-tb section-bg">
+		<div class="container">
+			<div class="instructor-wrapper">
+				<div class="instructor-single-top">
+					<div class="instructor-single-item d-flex flex-wrap justify-content-between">
+						<div class="instructor-single-thumb">
+							<img src="assets/images/instructor/single/01.jpg" alt="instructor">
+						</div>
+						<div class="instructor-single-content">
+							<h4 class="title">Emilee Logan</h4>
+							<p class="ins-dege">Master of Education Degree</p>
+                            <span class="ratting">
+                                <i class="icofont-ui-rating"></i>
+                                <i class="icofont-ui-rating"></i>
+                                <i class="icofont-ui-rating"></i>
+                                <i class="icofont-ui-rating"></i>
+                                <i class="icofont-ui-rating"></i>
+                            </span>
+							<p class="ins-desc">Infrastruct ntrinsicl grow optimal talers rather than efectve nformaon Collabora optimize partnersh and frictionles deliverables</p>
+							<h6 class="subtitle">Personal Statement</h6>
+							<p class="ins-desc">Enthusa expedte clent focused growth strateg wherea clent centered infrastruct ntrinsicl grow optimal talers rather than efectve nformaon Collabora optimize partnersh and frictionles deliverables infrastructs ntrinsicl grow optimal talers rather efectve</p>
+							<ul class="lab-ul">
+								<li class="d-flex flex-wrap justify-content-start">
+									<span class="list-name">Adress</span>
+									<span class="list-attr">Suite 02 and 07 Melbourne, Australia</span>
+								</li>
+								<li class="d-flex flex-wrap justify-content-start">
+									<span class="list-name">Email</span>
+									<span class="list-attr">emileelogan@gamil.com</span>
+								</li>
+								<li class="d-flex flex-wrap justify-content-start">
+									<span class="list-name">Phone</span>
+									<span class="list-attr">+021 548 736 982 ,01236985</span>
+								</li>
+								<li class="d-flex flex-wrap justify-content-start">
+									<span class="list-name">website</span>
+									<span class="list-attr">www.adminEdukon.com</span>
+								</li>
+								<li class="d-flex flex-wrap justify-content-start">
+									<span class="list-name">Follow Us</span>
+									<ul class="lab-ul list-attr d-flex flex-wrap justify-content-start">
+										<li>
+											<a class="twitter" href="#"><i class="icofont-twitter"></i></a>
+										</li>
+										<li>
+											<a class="instagram" href="#"><i class="icofont-instagram"></i></a>
+										</li>
+										<li>
+											<a class="basketball" href="#"><i class="icofont-basketball"></i></a>
+										</li>
+										<li>
+											<a class="vimeo" href="#"><i class="icofont-vimeo"></i></a>
+										</li>
+										<li>
+											<a class="beahnce" href="#"><i class="icofont-behance"></i></a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+    <!-- instructor Single Section Ends Here -->
 
-    <!-- Skill section start here -->
-    <div class="skill-section padding-tb">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-5 col-12">
-                    <div class="section-header">
-                        <h2 class="title">Build Your Project Management Skills Online Anytime</h2>
-                        <a href="#" class="lab-btn"><span>Sign Up Now</span></a>
-                    </div>
-                </div>
-                <div class="col-lg-7 col-12">
-                    <div class="section-wrpper">
-                        <div class="row g-4 justify-content-center row-cols-sm-2 row-cols-1">
-                            <div class="col">
-                                <div class="skill-item">
-                                    <div class="skill-inner">
-                                        <div class="skill-thumb">
-                                            <img src="assets/images/skill/icon/01.jpg" alt="skill thumb">
-                                        </div>
-                                        <div class="skill-content">
-                                            <h5>Skilled Instructors</h5>
-                                            <p>You pick the schedule.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="skill-item">
-                                    <div class="skill-inner">
-                                        <div class="skill-thumb">
-                                            <img src="assets/images/skill/icon/02.jpg" alt="skill thumb">
-                                        </div>
-                                        <div class="skill-content">
-                                            <h5>Get Certificate</h5>
-                                            <p>You pick the schedule.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="skill-item">
-                                    <div class="skill-inner">
-                                        <div class="skill-thumb">
-                                            <img src="assets/images/skill/icon/03.jpg" alt="skill thumb">
-                                        </div>
-                                        <div class="skill-content">
-                                            <h5>Online Classes</h5>
-                                            <p>You pick the schedule.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="skill-item">
-                                    <div class="skill-inner">
-                                        <div class="skill-thumb">
-                                            <img src="assets/images/skill/icon/04.jpg" alt="skill thumb">
-                                        </div>
-                                        <div class="skill-content">
-                                            <h5>Educator Helps</h5>
-                                            <p>You pick the schedule.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Skill section ending here -->
+
 
 
     <!-- Achievement section start here -->
@@ -499,7 +484,8 @@
                             <div class="count-item">
                                 <div class="count-inner">
                                     <div class="count-content">
-                                        <h2><span class="count" data-to="30" data-speed="1500"></span><span>+</span></h2>
+                                        <h2><span class="count" data-to="30" data-speed="1500"></span><span>+</span>
+                                        </h2>
                                         <p>Years of Language Education Experience</p>
                                     </div>
                                 </div>
@@ -509,7 +495,8 @@
                             <div class="count-item">
                                 <div class="count-inner">
                                     <div class="count-content">
-                                        <h2><span class="count" data-to="3080" data-speed="1500"></span><span>+</span></h2>
+                                        <h2><span class="count" data-to="3080" data-speed="1500"></span><span>+</span>
+                                        </h2>
                                         <p>Learners Enrolled in Edukon Courses</p>
                                     </div>
                                 </div>
@@ -519,7 +506,8 @@
                             <div class="count-item">
                                 <div class="count-inner">
                                     <div class="count-content">
-                                        <h2><span class="count" data-to="330" data-speed="1500"></span><span>+</span></h2>
+                                        <h2><span class="count" data-to="330" data-speed="1500"></span><span>+</span>
+                                        </h2>
                                         <p>Qualified Teachers And Language Experts</p>
                                     </div>
                                 </div>
@@ -529,7 +517,8 @@
                             <div class="count-item">
                                 <div class="count-inner">
                                     <div class="count-content">
-                                        <h2><span class="count" data-to="2300" data-speed="1500"></span><span>+</span></h2>
+                                        <h2><span class="count" data-to="2300" data-speed="1500"></span><span>+</span>
+                                        </h2>
                                         <p>Innovative Foreign Language Courses</p>
                                     </div>
                                 </div>
@@ -555,21 +544,26 @@
                         <div class="post-item">
                             <div class="post-inner">
                                 <div class="post-thumb">
-                                    <a href="blog-single.html"><img src="assets/images/blog/01.jpg" alt="blog thumb"></a>
+                                    <a href="blog-single.html"><img src="assets/images/blog/01.jpg"
+                                            alt="blog thumb"></a>
                                 </div>
                                 <div class="post-content">
-                                    <a href="blog-single.html"><h4>Scottish Creatives To Receive Funded Business.</h4></a>
+                                    <a href="blog-single.html">
+                                        <h4>Scottish Creatives To Receive Funded Business.</h4>
+                                    </a>
                                     <div class="meta-post">
                                         <ul class="lab-ul">
                                             <li><i class="icofont-ui-user"></i>Begrass Tyson</li>
                                             <li><i class="icofont-calendar"></i>April 23,2021</li>
                                         </ul>
                                     </div>
-                                    <p>Pluoresnts customize prancing apcente customer service anding ands asing in straelg Interacvely cordinate performe</p>
+                                    <p>Pluoresnts customize prancing apcente customer service anding ands asing in
+                                        straelg Interacvely cordinate performe</p>
                                 </div>
                                 <div class="post-footer">
                                     <div class="pf-left">
-                                        <a href="blog-single.html" class="lab-btn-text">Read more <i class="icofont-external-link"></i></a>
+                                        <a href="blog-single.html" class="lab-btn-text">Read more <i
+                                                class="icofont-external-link"></i></a>
                                     </div>
                                     <div class="pf-right">
                                         <i class="icofont-comment"></i>
@@ -583,21 +577,26 @@
                         <div class="post-item">
                             <div class="post-inner">
                                 <div class="post-thumb">
-                                    <a href="blog-single.html"><img src="assets/images/blog/02.jpg" alt="blog thumb"></a>
+                                    <a href="blog-single.html"><img src="assets/images/blog/02.jpg"
+                                            alt="blog thumb"></a>
                                 </div>
                                 <div class="post-content">
-                                    <a href="blog-single.html"><h4>Scottish Creatives To Receive Funded Business.</h4></a>
+                                    <a href="blog-single.html">
+                                        <h4>Scottish Creatives To Receive Funded Business.</h4>
+                                    </a>
                                     <div class="meta-post">
                                         <ul class="lab-ul">
                                             <li><i class="icofont-ui-user"></i>Begrass Tyson</li>
                                             <li><i class="icofont-calendar"></i>April 23,2021</li>
                                         </ul>
                                     </div>
-                                    <p>Pluoresnts customize prancing apcente customer service anding ands asing in straelg Interacvely cordinate performe</p>
+                                    <p>Pluoresnts customize prancing apcente customer service anding ands asing in
+                                        straelg Interacvely cordinate performe</p>
                                 </div>
                                 <div class="post-footer">
                                     <div class="pf-left">
-                                        <a href="blog-single.html" class="lab-btn-text">Read more <i class="icofont-external-link"></i></a>
+                                        <a href="blog-single.html" class="lab-btn-text">Read more <i
+                                                class="icofont-external-link"></i></a>
                                     </div>
                                     <div class="pf-right">
                                         <i class="icofont-comment"></i>
@@ -611,21 +610,26 @@
                         <div class="post-item">
                             <div class="post-inner">
                                 <div class="post-thumb">
-                                    <a href="blog-single.html"><img src="assets/images/blog/03.jpg" alt="blog thumb"></a>
+                                    <a href="blog-single.html"><img src="assets/images/blog/03.jpg"
+                                            alt="blog thumb"></a>
                                 </div>
                                 <div class="post-content">
-                                    <a href="blog-single.html"><h4>Scottish Creatives To Receive Funded Business.</h4></a>
+                                    <a href="blog-single.html">
+                                        <h4>Scottish Creatives To Receive Funded Business.</h4>
+                                    </a>
                                     <div class="meta-post">
                                         <ul class="lab-ul">
                                             <li><i class="icofont-ui-user"></i>Begrass Tyson</li>
                                             <li><i class="icofont-calendar"></i>April 23,2021</li>
                                         </ul>
                                     </div>
-                                    <p>Pluoresnts customize prancing apcente customer service anding ands asing in straelg Interacvely cordinate performe</p>
+                                    <p>Pluoresnts customize prancing apcente customer service anding ands asing in
+                                        straelg Interacvely cordinate performe</p>
                                 </div>
                                 <div class="post-footer">
                                     <div class="pf-left">
-                                        <a href="blog-single.html" class="lab-btn-text">Read more <i class="icofont-external-link"></i></a>
+                                        <a href="blog-single.html" class="lab-btn-text">Read more <i
+                                                class="icofont-external-link"></i></a>
                                     </div>
                                     <div class="pf-right">
                                         <i class="icofont-comment"></i>
@@ -810,7 +814,7 @@
                     </div>
                 </div>
             </div>
-           
+
         </footer>
         <!-- Footer Section Ending Here -->
     </div>
@@ -825,4 +829,5 @@
     <script src="{{asset('assets/js/isotope.pkgd.js')}}"></script>
     <script src="{{asset('assets/js/functions.js')}}"></script>
 </body>
+
 </html>
