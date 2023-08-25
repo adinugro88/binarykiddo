@@ -1,30 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="{{setting('site.description')}}">
-
-    <title>{{setting('site.title')}}</title>
-
-    <link rel="shortcut icon" href="{{  Voyager::image(setting('site.logo'))}}" type="image/x-icon">
-    <link rel="stylesheet" href="{{asset('assets/css/animate.css')}}">
-    <link rel="stylesheet" href="{{asset('assets/css/bootstrap.min.css')}}">
-    <link rel="stylesheet" href="{{asset('assets/css/icofont.min.css')}}">
-    <link rel="stylesheet" href="{{asset('assets/css/swiper.min.css')}}">
-    <link rel="stylesheet" href="{{asset('assets/css/lightcase.css')}}">
-    <link rel="stylesheet" href="{{asset('assets/css/style.css')}}">
-
-    <style>
-        .banner-section {
-            background-image: url(bgbanner.jpg);
-        }
-
-    </style>
-</head>
-
-<body>
 
     @include('layout.header')
     <!-- banner section start here -->
@@ -381,14 +355,4 @@
     
     @include('layout.footer')
 
-    <script src="{{asset('assets/js/jquery.js')}}"></script>
-    <script src="{{asset('assets/js/bootstrap.min.js')}}"></script>
-    <script src="{{asset('assets/js/swiper.min.js')}}"></script>
-    <script src="{{asset('assets/js/progress.js')}}"></script>
-    <script src="{{asset('assets/js/lightcase.js')}}"></script>
-    <script src="{{asset('assets/js/counter-up.js')}}"></script>
-    <script src="{{asset('assets/js/isotope.pkgd.js')}}"></script>
-    <script src="{{asset('assets/js/functions.js')}}"></script>
-</body>
-
-</html>
+  

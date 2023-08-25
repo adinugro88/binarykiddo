@@ -1,4 +1,33 @@
-    <!-- preloader start here -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="{{setting('site.description')}}">
+
+    <title>{{setting('site.title')}}</title>
+
+    <link rel="shortcut icon" href="{{  Voyager::image(setting('site.logo'))}}" type="image/x-icon">
+    <link rel="stylesheet" href="{{asset('assets/css/animate.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/css/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/css/icofont.min.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/css/swiper.min.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/css/lightcase.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/css/style.css')}}">
+
+    <style>
+        .banner-section {
+            background-image: url(bgbanner.jpg);
+        }
+
+    </style>
+</head>
+
+<body> 
+ 
+ 
+ <!-- preloader start here -->
     <div class="preloader">
         <div class="preloader-inner">
             <div class="preloader-icon">
@@ -51,11 +80,11 @@
                         <div class="menu">
                             <ul class="lab-ul">
                                 <li>
-                                    <a href="#0">Home</a>
+                                    <a href="/">Home</a>
                                 </li>
                                 
                                 <li>
-                                    <a href="#0">About</a>
+                                    <a href="/about">About</a>
                                    
                                 </li>
                                 <li>
