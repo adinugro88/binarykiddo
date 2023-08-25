@@ -54,7 +54,7 @@
                             <i class="icofont-ui-call"></i> <span> {{$contact->handphone}}</span>
                         </li>
                         <li>
-                            <i class="icofont-ui-call"></i> <span>{{$contact->handphone2}}</span>
+                            <i class="icofont-email"></i> <span>{{$contact->email}}</span>
                         </li>
                         <li>
                             <i class="icofont-location-pin"></i> {{$contact->address}}

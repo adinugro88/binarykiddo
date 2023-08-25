@@ -34,10 +34,6 @@
                         <div class="abs-thumb">
                             <img src="assets/images/about/02.jpg" alt="about">
                         </div>
-                        <div class="about-left-content">
-                            <h3>30+</h3>
-                            <p>Years Of Experiences</p>
-                        </div>
                     </div>
                 </div>
                 <div class="col">
@@ -84,6 +80,160 @@
         </div>
     </div>
     <!-- About Us Section Ending Here -->
+
+    
+    <!-- Instructors Section Start Here -->
+    <div class="instructor-section padding-tb ">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="subtitle">World-class Instructors</span>
+                <h2 class="title">Classes Taught By Real Creators</h2>
+            </div>
+            <div class="section-wrapper">
+                <div class="row g-4 justify-content-center row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-4">
+                    <div class="col">
+                        <div class="instructor-item">
+                            <div class="instructor-inner">
+                                <div class="instructor-thumb">
+                                    <img src="assets/images/instructor/01.jpg" alt="instructor">
+                                </div>
+                                <div class="instructor-content">
+                                    <a href="team-single.html"><h4>Emilee Logan</h4></a>
+                                    <p>Master of Education Degree</p>
+                                    <span class="ratting">
+                                        <i class="icofont-ui-rating"></i>
+                                        <i class="icofont-ui-rating"></i>
+                                        <i class="icofont-ui-rating"></i>
+                                        <i class="icofont-ui-rating"></i>
+                                        <i class="icofont-ui-rating"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="instructor-footer">
+                                <ul class="lab-ul d-flex flex-wrap justify-content-between align-items-center">
+                                    <li><i class="icofont-book-alt"></i> 08 courses</li>
+                                    <li><i class="icofont-users-alt-3"></i> 30 students</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="instructor-item">
+                            <div class="instructor-inner">
+                                <div class="instructor-thumb">
+                                    <img src="assets/images/instructor/02.jpg" alt="instructor">
+                                </div>
+                                <div class="instructor-content">
+                                    <a href="team-single.html"><h4>Donald Logan</h4></a>
+                                    <p>Master of Education Degree</p>
+                                    <span class="ratting">
+                                        <i class="icofont-ui-rating"></i>
+                                        <i class="icofont-ui-rating"></i>
+                                        <i class="icofont-ui-rating"></i>
+                                        <i class="icofont-ui-rating"></i>
+                                        <i class="icofont-ui-rating"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="instructor-footer">
+                                <ul class="lab-ul d-flex flex-wrap justify-content-between align-items-center">
+                                    <li><i class="icofont-book-alt"></i> 08 courses</li>
+                                    <li><i class="icofont-users-alt-3"></i> 30 students</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="instructor-item">
+                            <div class="instructor-inner">
+                                <div class="instructor-thumb">
+                                    <img src="assets/images/instructor/03.jpg" alt="instructor">
+                                </div>
+                                <div class="instructor-content">
+                                    <a href="team-single.html"><h4>Oliver Porter</h4></a>
+                                    <p>Master of Education Degree</p>
+                                    <span class="ratting">
+                                        <i class="icofont-ui-rating"></i>
+                                        <i class="icofont-ui-rating"></i>
+                                        <i class="icofont-ui-rating"></i>
+                                        <i class="icofont-ui-rating"></i>
+                                        <i class="icofont-ui-rating"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="instructor-footer">
+                                <ul class="lab-ul d-flex flex-wrap justify-content-between align-items-center">
+                                    <li><i class="icofont-book-alt"></i> 08 courses</li>
+                                    <li><i class="icofont-users-alt-3"></i> 30 students</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center footer-btn">
+                    <p>Want to help people learn, grow and achieve more in life?<a href="team.html">Become an instructor</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Instructors Section Ending Here -->
+
+    <!-- Achievement section start here -->
+    <div class="achievement-section style-2 padding-tb">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="subtitle">START TO SUCCESS</span>
+                <h2 class="title">Achieve Your Goals With Edukon</h2>
+            </div>
+            <div class="section-wrapper">
+                <div class="counter-part">
+                    <div class="row g-4 row-cols-lg-4 row-cols-sm-2 row-cols-1 justify-content-center">
+                        <div class="col">
+                            <div class="count-item">
+                                <div class="count-inner">
+                                    <div class="count-content">
+                                        <h2><span class="count" data-to="30" data-speed="1500"></span><span>+</span></h2>
+                                        <p>Years of Language Education Experience</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="count-item">
+                                <div class="count-inner">
+                                    <div class="count-content">
+                                        <h2><span class="count" data-to="3080" data-speed="1500"></span><span>+</span></h2>
+                                        <p>Learners Enrolled in Edukon Courses</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="count-item">
+                                <div class="count-inner">
+                                    <div class="count-content">
+                                        <h2><span class="count" data-to="330" data-speed="1500"></span><span>+</span></h2>
+                                        <p>Qualified Teachers And Language Experts</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="count-item">
+                                <div class="count-inner">
+                                    <div class="count-content">
+                                        <h2><span class="count" data-to="2300" data-speed="1500"></span><span>+</span></h2>
+                                        <p>Innovative Foreign Language Courses</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Achievement section ending here -->
 
 
 @include('layout.footer')
