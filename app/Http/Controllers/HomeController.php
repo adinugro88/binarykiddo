@@ -10,6 +10,7 @@ use App\Models\Founder;
 use App\Models\Kelas;
 use App\Models\Contact;
 use App\Models\Picturetool;
+use App\Models\Kategoris;
 
 
 class HomeController extends Controller
@@ -24,12 +25,13 @@ class HomeController extends Controller
         $about = About::all();
         $banner = Banner::orderBy('id', 'ASC')->get();
         $point = Point::orderBy('id', 'ASC')->get();
-        $founder = Founder::all();
+        $founder = Founder::First();
         $picture = Picturetool::all();
         $contact = Contact::First();
         $program = Kelas::where("show","show")->get();
+        $kategori = Kategoris::where("show","show")->get();
         //dd($kelas);
-        return view('welcome2', compact('about','banner','point','founder','program','contact','picture'));
+        return view('welcome2', compact('kategori','about','banner','point','founder','program','contact','picture'));
     }
 
     /**

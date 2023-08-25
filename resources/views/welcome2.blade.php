@@ -106,84 +106,24 @@
             </div>
             <div class="section-wrapper">
                 <div class="row g-2 justify-content-center row-cols-xl-6 row-cols-md-3 row-cols-sm-2 row-cols-1">
-                    <div class="col">
-                        <div class="category-item text-center">
-                            <div class="category-inner">
-                                <div class="category-thumb">
-                                    <img src="assets/images/category/icon/01.jpg" alt="category">
-                                </div>
-                                <div class="category-content">
-                                    <a href="course.html"><h6>Computer Science</h6></a>
-                                    <span>24 Course</span>
-                                </div>
+                   @foreach ($kategori as $data)
+                   <div class="col">
+                    <div class="category-item text-center">
+                        <div class="category-inner">
+                            <div class="category-thumb">
+                                <img src="{{Voyager::image($data->icon)}}" alt="category">
+                            </div>
+                            <div class="category-content">
+                                <a href="#"><h6>{{$data->title}}</h6></a>
+                               
                             </div>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="category-item text-center">
-                            <div class="category-inner">
-                                <div class="category-thumb">
-                                    <img src="assets/images/category/icon/02.jpg" alt="category">
-                                </div>
-                                <div class="category-content">
-                                    <a href="course.html"><h6>Civil Engineering</h6></a>
-                                    <span>40 Course</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="category-item text-center">
-                            <div class="category-inner">
-                                <div class="category-thumb">
-                                    <img src="assets/images/category/icon/03.jpg" alt="category">
-                                </div>
-                                <div class="category-content">
-                                    <a href="course.html"><h6>Business Analysis</h6></a>
-                                    <span>27 Course</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="category-item text-center">
-                            <div class="category-inner">
-                                <div class="category-thumb">
-                                    <img src="assets/images/category/icon/04.jpg" alt="category">
-                                </div>
-                                <div class="category-content">
-                                    <a href="course.html"><h6>Data Science Analytics</h6></a>
-                                    <span>28 Course</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="category-item text-center">
-                            <div class="category-inner">
-                                <div class="category-thumb">
-                                    <img src="assets/images/category/icon/05.jpg" alt="category">
-                                </div>
-                                <div class="category-content">
-                                    <a href="course.html"><h6>Learning Management</h6></a>
-                                    <span>78 Course</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="category-item text-center">
-                            <div class="category-inner">
-                                <div class="category-thumb">
-                                    <img src="assets/images/category/icon/06.jpg" alt="category">
-                                </div>
-                                <div class="category-content">
-                                    <a href="course.html"><h6>Computer Engineering</h6></a>
-                                    <span>38 Course</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                </div> 
+                   @endforeach
+                   
+
+
                 </div>
                 <div class="text-center mt-5">
                     <a href="course.html" class="lab-btn"><span>Browse All Categories</span></a>
@@ -198,7 +138,7 @@
         <div class="container">
             <div class="section-header">
                 <span class="subtitle yellow-color">Don’t Miss</span>
-                <h2 class="title">Lincon’s Courses</h2>
+                <h2 class="title">Our Courses</h2>
                 <div class="course-navigations">
                     <div class="course-navi course-navi-next"><i class="icofont-double-left"></i></div>
                     <div class="course-navi course-navi-prev"><i class="icofont-double-right"></i></div>
@@ -207,15 +147,15 @@
             <div class="section-wrapper">
                 <div class="course-slider p-2">
                     <div class="swiper-wrapper">
+                        @foreach ($program as $data)
                         <div class="swiper-slide">
                             <div class="course-item style-3">
                                 <div class="course-inner text-center">
                                     <div class="course-thumb">
-                                        <img src="assets/images/course/13.jpg" alt="course">
+                                        <img src="{{Voyager::image($data->picture)}}" alt="course">
                                         <ul class="course-info lab-ul">
-                                            <li><span class="course-name">Web Design</span></li>
-                                            <li><span class="price">$19.00</span></li>
-                                            <li>
+                                            <li><span class="course-name">{{$data->kategori}}</span></li>
+                                            {{-- <li>
                                                 <span class="ratting">
                                                     <i class="icofont-ui-rate-blank"></i>
                                                     <i class="icofont-ui-rate-blank"></i>
@@ -223,86 +163,26 @@
                                                     <i class="icofont-ui-rate-blank"></i>
                                                     <i class="icofont-ui-rate-blank"></i>
                                                 </span>
-                                            </li>
+                                            </li> --}}
                                         </ul>
                                     </div>
                                     <div class="course-content">
                                         <a href="course-single.html">
-                                            <h4>Learn Basic Web Design with HTML & CSS</h4>
+                                            <h4>{{$data->title}}</h4>
                                         </a>
-                                        <div class="course-details">
+                                        {{-- <div class="course-details">
                                             <div class="couse-count"><i class="icofont-users-alt-3"></i> 200</div>
                                             <div class="couse-topic"><i class="icofont-speech-comments"></i> 23</div>
-                                        </div>
+                                        </div> --}}
+                                        <br>
                                         <a href="course-single.html" class="lab-btn"><span>Read More</span></a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-slide">
-                            <div class="course-item style-3">
-                                <div class="course-inner text-center">
-                                    <div class="course-thumb">
-                                        <img src="assets/images/course/14.jpg" alt="course">
-                                        <ul class="course-info lab-ul">
-                                            <li><span class="course-name">PHP</span></li>
-                                            <li><span class="price">Free</span></li>
-                                            <li>
-                                                <span class="ratting">
-                                                    <i class="icofont-ui-rate-blank"></i>
-                                                    <i class="icofont-ui-rate-blank"></i>
-                                                    <i class="icofont-ui-rate-blank"></i>
-                                                    <i class="icofont-ui-rate-blank"></i>
-                                                    <i class="icofont-ui-rate-blank"></i>
-                                                </span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="course-content">
-                                        <a href="course-single.html">
-                                            <h4>Learn Basic Web Design with HTML & CSS</h4>
-                                        </a>
-                                        <div class="course-details">
-                                            <div class="couse-count"><i class="icofont-users-alt-3"></i> 200</div>
-                                            <div class="couse-topic"><i class="icofont-speech-comments"></i> 23</div>
-                                        </div>
-                                        <a href="course-single.html" class="lab-btn"><span>Read More</span></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="course-item style-3">
-                                <div class="course-inner text-center">
-                                    <div class="course-thumb">
-                                        <img src="assets/images/course/15.jpg" alt="course">
-                                        <ul class="course-info lab-ul">
-                                            <li><span class="course-name">English</span></li>
-                                            <li><span class="price">$19.00</span></li>
-                                            <li>
-                                                <span class="ratting">
-                                                    <i class="icofont-ui-rate-blank"></i>
-                                                    <i class="icofont-ui-rate-blank"></i>
-                                                    <i class="icofont-ui-rate-blank"></i>
-                                                    <i class="icofont-ui-rate-blank"></i>
-                                                    <i class="icofont-ui-rate-blank"></i>
-                                                </span>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="course-content">
-                                        <a href="course-single.html">
-                                            <h4>Learn Basic Web Design with HTML & CSS</h4>
-                                        </a>
-                                        <div class="course-details">
-                                            <div class="couse-count"><i class="icofont-users-alt-3"></i> 200</div>
-                                            <div class="couse-topic"><i class="icofont-speech-comments"></i> 23</div>
-                                        </div>
-                                        <a href="course-single.html" class="lab-btn"><span>Read More</span></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        @endforeach
+                       
+                       
                     </div>
                 </div>
             </div>
@@ -323,73 +203,9 @@
                     <div class="col">
                         <div class="sf-left">
                             <div class="sfl-thumb">
-                                <img src="assets/images/feedback/01.jpg" alt="student feedback">
-                                <a href="https://www.youtube-nocookie.com/embed/jP649ZHA8Tg" class="video-button"
+                                <img src="{{ Voyager::image( $contact->youtube_thumbnail ) }}" alt="student feedback">
+                                <a href="{{ $contact->youtube  }}" class="video-button"
                                     data-rel="lightcase"><i class="icofont-ui-play"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="stu-feed-item">
-                            <div class="stu-feed-inner">
-                                <div class="stu-feed-top">
-                                    <div class="sft-left">
-                                        <div class="sftl-thumb">
-                                            <img src="assets/images/feedback/student/01.jpg" alt="student feedback">
-                                        </div>
-                                        <div class="sftl-content">
-                                            <a href="#">
-                                                <h6>Oliver Beddows</h6>
-                                            </a>
-                                            <span>UX designer</span>
-                                        </div>
-                                    </div>
-                                    <div class="sft-right">
-                                        <span class="ratting">
-                                            <i class="icofont-ui-rating"></i>
-                                            <i class="icofont-ui-rating"></i>
-                                            <i class="icofont-ui-rating"></i>
-                                            <i class="icofont-ui-rating"></i>
-                                            <i class="icofont-ui-rating"></i>
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="stu-feed-bottom">
-                                    <p>Rapidiously buildcollaboration anden deas sharing viaing and with bleedng edgeing
-                                        nterfaces fnergstcally plagiarize teams anbuling paradgms whereas goingi forward
-                                        process and monetze</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="stu-feed-item">
-                            <div class="stu-feed-inner">
-                                <div class="stu-feed-top">
-                                    <div class="sft-left">
-                                        <div class="sftl-thumb">
-                                            <img src="assets/images/feedback/student/02.jpg" alt="student feedback">
-                                        </div>
-                                        <div class="sftl-content">
-                                            <a href="#">
-                                                <h6>Madley Pondor</h6>
-                                            </a>
-                                            <span>UX designer</span>
-                                        </div>
-                                    </div>
-                                    <div class="sft-right">
-                                        <span class="ratting">
-                                            <i class="icofont-ui-rating"></i>
-                                            <i class="icofont-ui-rating"></i>
-                                            <i class="icofont-ui-rating"></i>
-                                            <i class="icofont-ui-rating"></i>
-                                            <i class="icofont-ui-rating"></i>
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="stu-feed-bottom">
-                                    <p>Rapidiously buildcollaboration anden deas sharing viaing and with bleedng edgeing
-                                        nterfaces fnergstcally plagiarize teams anbuling paradgms whereas goingi forward
-                                        process and monetze</p>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -404,63 +220,18 @@
 		<div class="container">
 			<div class="instructor-wrapper">
 				<div class="instructor-single-top">
+
 					<div class="instructor-single-item d-flex flex-wrap justify-content-between">
 						<div class="instructor-single-thumb">
-							<img src="assets/images/instructor/single/01.jpg" alt="instructor">
+							<img src="{{Voyager::image($founder->photo)}}" alt="instructor">
 						</div>
 						<div class="instructor-single-content">
-							<h4 class="title">Emilee Logan</h4>
-							<p class="ins-dege">Master of Education Degree</p>
-                            <span class="ratting">
-                                <i class="icofont-ui-rating"></i>
-                                <i class="icofont-ui-rating"></i>
-                                <i class="icofont-ui-rating"></i>
-                                <i class="icofont-ui-rating"></i>
-                                <i class="icofont-ui-rating"></i>
-                            </span>
-							<p class="ins-desc">Infrastruct ntrinsicl grow optimal talers rather than efectve nformaon Collabora optimize partnersh and frictionles deliverables</p>
-							<h6 class="subtitle">Personal Statement</h6>
-							<p class="ins-desc">Enthusa expedte clent focused growth strateg wherea clent centered infrastruct ntrinsicl grow optimal talers rather than efectve nformaon Collabora optimize partnersh and frictionles deliverables infrastructs ntrinsicl grow optimal talers rather efectve</p>
-							<ul class="lab-ul">
-								<li class="d-flex flex-wrap justify-content-start">
-									<span class="list-name">Adress</span>
-									<span class="list-attr">Suite 02 and 07 Melbourne, Australia</span>
-								</li>
-								<li class="d-flex flex-wrap justify-content-start">
-									<span class="list-name">Email</span>
-									<span class="list-attr">emileelogan@gamil.com</span>
-								</li>
-								<li class="d-flex flex-wrap justify-content-start">
-									<span class="list-name">Phone</span>
-									<span class="list-attr">+021 548 736 982 ,01236985</span>
-								</li>
-								<li class="d-flex flex-wrap justify-content-start">
-									<span class="list-name">website</span>
-									<span class="list-attr">www.adminEdukon.com</span>
-								</li>
-								<li class="d-flex flex-wrap justify-content-start">
-									<span class="list-name">Follow Us</span>
-									<ul class="lab-ul list-attr d-flex flex-wrap justify-content-start">
-										<li>
-											<a class="twitter" href="#"><i class="icofont-twitter"></i></a>
-										</li>
-										<li>
-											<a class="instagram" href="#"><i class="icofont-instagram"></i></a>
-										</li>
-										<li>
-											<a class="basketball" href="#"><i class="icofont-basketball"></i></a>
-										</li>
-										<li>
-											<a class="vimeo" href="#"><i class="icofont-vimeo"></i></a>
-										</li>
-										<li>
-											<a class="beahnce" href="#"><i class="icofont-behance"></i></a>
-										</li>
-									</ul>
-								</li>
-							</ul>
+							<h4 class="title">{{$founder->nama}}</h4>
+							<p class="ins-dege">{{$founder->title}}</p>
+                            {!!($founder->text)!!}
 						</div>
 					</div>
+
 				</div>
 			</div>
 		</div>
@@ -470,66 +241,6 @@
 
 
 
-    <!-- Achievement section start here -->
-    <div class="achievement-section style-2 padding-tb">
-        <div class="container">
-            <div class="section-header text-center">
-                <span class="subtitle">START TO SUCCESS</span>
-                <h2 class="title">Achieve Your Goals With Edukon</h2>
-            </div>
-            <div class="section-wrapper">
-                <div class="counter-part">
-                    <div class="row g-4 row-cols-lg-4 row-cols-sm-2 row-cols-1 justify-content-center">
-                        <div class="col">
-                            <div class="count-item">
-                                <div class="count-inner">
-                                    <div class="count-content">
-                                        <h2><span class="count" data-to="30" data-speed="1500"></span><span>+</span>
-                                        </h2>
-                                        <p>Years of Language Education Experience</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="count-item">
-                                <div class="count-inner">
-                                    <div class="count-content">
-                                        <h2><span class="count" data-to="3080" data-speed="1500"></span><span>+</span>
-                                        </h2>
-                                        <p>Learners Enrolled in Edukon Courses</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="count-item">
-                                <div class="count-inner">
-                                    <div class="count-content">
-                                        <h2><span class="count" data-to="330" data-speed="1500"></span><span>+</span>
-                                        </h2>
-                                        <p>Qualified Teachers And Language Experts</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="count-item">
-                                <div class="count-inner">
-                                    <div class="count-content">
-                                        <h2><span class="count" data-to="2300" data-speed="1500"></span><span>+</span>
-                                        </h2>
-                                        <p>Innovative Foreign Language Courses</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Achievement section ending here -->
 
     <!-- blog section start here -->
     <div class="blog-section padding-tb">
@@ -645,180 +356,30 @@
     </div>
     <!-- blog section ending here -->
 
-    <!-- sponsor section start here -->
-    <div class="sponsor-section section-bg">
+     <!-- sponsor section start here -->
+     <div class="sponsor-section section-bg">
         <div class="container">
             <div class="section-wrapper">
                 <div class="sponsor-slider">
                     <div class="swiper-wrapper">
+                        @foreach ($picture as $data)
                         <div class="swiper-slide">
                             <div class="sponsor-iten">
                                 <div class="sponsor-thumb">
-                                    <img src="assets/images/sponsor/01.png" alt="sponsor">
+                                    <img width="80" class="" src="{{Voyager::image($data->image)}}"
+                                        alt="{{$data->keterangan}}">
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-slide">
-                            <div class="sponsor-iten">
-                                <div class="sponsor-thumb">
-                                    <img src="assets/images/sponsor/02.png" alt="sponsor">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="sponsor-iten">
-                                <div class="sponsor-thumb">
-                                    <img src="assets/images/sponsor/03.png" alt="sponsor">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="sponsor-iten">
-                                <div class="sponsor-thumb">
-                                    <img src="assets/images/sponsor/04.png" alt="sponsor">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="sponsor-iten">
-                                <div class="sponsor-thumb">
-                                    <img src="assets/images/sponsor/05.png" alt="sponsor">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="sponsor-iten">
-                                <div class="sponsor-thumb">
-                                    <img src="assets/images/sponsor/06.png" alt="sponsor">
-                                </div>
-                            </div>
-                        </div>
+                        @endforeach
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- sponsor section ending here -->
-
-    <!-- footer -->
-    <div class="news-footer-wrap">
-        <div class="fs-shape">
-            <img src="assets/images/shape-img/03.png" alt="fst" class="fst-1">
-            <img src="assets/images/shape-img/04.png" alt="fst" class="fst-2">
-        </div>
-        <!-- Newsletter Section Start Here -->
-        <div class="news-letter">
-            <div class="container">
-                <div class="section-wrapper">
-                    <div class="news-title">
-                        <h3>Want Us To Email You About Special Offers And Updates?</h3>
-                    </div>
-                    <div class="news-form">
-                        <form action="/">
-                            <div class="nf-list">
-                                <input type="email" name="email" placeholder="Enter Your Email">
-                                <input type="submit" name="submit" value="Subscribe Now">
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Newsletter Section Ending Here -->
-
-        <!-- Footer Section Start Here -->
-        <footer>
-            <div class="footer-top padding-tb pt-0">
-                <div class="container">
-                    <div class="row g-4 row-cols-xl-4 row-cols-sm-2 row-cols-1 justify-content-center">
-                        <div class="col">
-                            <div class="footer-item">
-                                <div class="footer-inner">
-                                    <div class="footer-content">
-                                        <div class="title">
-                                            <h4>Site Map</h4>
-                                        </div>
-                                        <div class="content">
-                                            <ul class="lab-ul">
-                                                <li><a href="#">Documentation</a></li>
-                                                <li><a href="#">Feedback</a></li>
-                                                <li><a href="#">Plugins</a></li>
-                                                <li><a href="#">Support Forums</a></li>
-                                                <li><a href="#">Themes</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="footer-item">
-                                <div class="footer-inner">
-                                    <div class="footer-content">
-                                        <div class="title">
-                                            <h4>Useful Links</h4>
-                                        </div>
-                                        <div class="content">
-                                            <ul class="lab-ul">
-                                                <li><a href="#">About Us</a></li>
-                                                <li><a href="#">Help Link</a></li>
-                                                <li><a href="#">Terms & Conditions</a></li>
-                                                <li><a href="#">Contact Us</a></li>
-                                                <li><a href="#">Privacy Policy</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="footer-item">
-                                <div class="footer-inner">
-                                    <div class="footer-content">
-                                        <div class="title">
-                                            <h4>Social Contact</h4>
-                                        </div>
-                                        <div class="content">
-                                            <ul class="lab-ul">
-                                                <li><a href="#">Facebook</a></li>
-                                                <li><a href="#">Twitter</a></li>
-                                                <li><a href="#">Instagram</a></li>
-                                                <li><a href="#">YouTube</a></li>
-                                                <li><a href="#">Github</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="footer-item">
-                                <div class="footer-inner">
-                                    <div class="footer-content">
-                                        <div class="title">
-                                            <h4>Our Support</h4>
-                                        </div>
-                                        <div class="content">
-                                            <ul class="lab-ul">
-                                                <li><a href="#">Help Center</a></li>
-                                                <li><a href="#">Paid with Mollie</a></li>
-                                                <li><a href="#">Status</a></li>
-                                                <li><a href="#">Changelog</a></li>
-                                                <li><a href="#">Contact Support</a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </footer>
-        <!-- Footer Section Ending Here -->
-    </div>
-    <!-- footer -->
+    
+    @include('layout.footer')
 
     <script src="{{asset('assets/js/jquery.js')}}"></script>
     <script src="{{asset('assets/js/bootstrap.min.js')}}"></script>
