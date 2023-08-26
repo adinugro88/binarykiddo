@@ -92,11 +92,8 @@
                                     
                                 </li>
                                
-                                <li><a href="contact.html">Contact</a></li>
-                                <li>
-                                    <a href="#0">Career</a>
-                                    
-                                </li>
+                                <li><a href="/contact">Contact</a></li>
+                                
                             </ul>
                         </div>
                         

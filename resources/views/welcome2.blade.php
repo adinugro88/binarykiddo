@@ -25,7 +25,7 @@
                     </div>
                     <div class="col-xxl-7 col-xl-6">
                         <div class="banner-thumb">
-                            <img src="01-min.png" alt="img">
+                            <img src="{{asset('01-min.png')}}" alt="img">
                         </div>
                     </div>
                 </div>
