@@ -88,7 +88,7 @@
                                    
                                 </li>
                                 <li>
-                                    <a href="#0">Courses</a>
+                                    <a href="/course">Courses</a>
                                     
                                 </li>
                                

@@ -3,12 +3,11 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\About;
+use App\Models\Kategoris;
 use App\Models\Contact;
-use App\Models\Founder;
-use App\Models\Teacher;
+use App\Models\Kelas;
 
-class AboutController extends Controller
+class CourseController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -17,13 +16,10 @@ class AboutController extends Controller
      */
     public function index()
     {
-        $about = About::first();
+        $kategori = Kategoris::all();
         $contact = Contact::First();
-        $founder = Founder::First();
-        $teacher = Teacher::all();
-        // dd($teacher);
-
-        return view("about",compact('founder','about','contact','teacher'));
+        $program = Kelas::paginate(10);
+        return view("courses",compact('kategori','contact','program'));
     }
 
     /**

@@ -1,5 +1,5 @@
    <!-- Footer Section Start Here -->
-   <footer class="style-2 yellow-color-section">
+   <footer class="style-2 yellow-color-section section-bg">
     <div class="footer-top padding-tb">
         <div class="container">
             <div class="row g-4 row-cols-xl-4 row-cols-sm-2 row-cols-1 justify-content-center">
