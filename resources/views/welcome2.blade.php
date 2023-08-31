@@ -2,7 +2,7 @@
 
     @include('layout.header')
     <!-- banner section start here -->
-    <h1>cahyo made in</h1>
+    <h1>update kocak </h1>
     <section class="banner-section style-1">
         <div class="container">
             <div class="section-wrapper">
