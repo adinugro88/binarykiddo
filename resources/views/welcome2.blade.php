@@ -2,7 +2,6 @@
 
     @include('layout.header')
     <!-- banner section start here -->
-    <h1>update kocak </h1>
     <section class="banner-section style-1">
         <div class="container">
             <div class="section-wrapper">
