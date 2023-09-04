@@ -23,7 +23,7 @@ class HomeController extends Controller
     public function index()
     {
         $about = About::all();
-        $banner = Banner::orderBy('id', 'ASC')->get();
+        $banner = Banner::First();
         $point = Point::orderBy('id', 'ASC')->get();
         $founder = Founder::First();
         $picture = Picturetool::all();

@@ -8,10 +8,9 @@
                 <div class="row align-items-center">
                     <div class="col-xxl-5 col-xl-6 col-lg-10">
                         <div class="banner-content">
-                            <h6 class="subtitle text-uppercase fw-medium">Online education</h6>
-                            <h2 class="title"><span class="d-lg-block">Learn The</span> Skills You Need <span
-                                    class="d-lg-block">To Succeed</span></h2>
-                            <button class="btn primarycolor"><i class="icofont-whatsapp"></i> <span>Contact Us
+                            <h6 class="subtitle text-uppercase fw-medium">{{$banner->headline1}}</h6>
+                            <h2 class="title"><span class="d-lg-block">{{$banner->headline2}} </span></h2>
+                            <button href="{{$contact->whatsapp}}" class="btn primarycolor white-color"><i class="icofont-whatsapp"></i> <span>Contact Us
                                     Now</button>
                             {{-- <form action="/">
                                 <div class="banner-icon">
@@ -95,9 +94,6 @@
                     </div>
                 </div> 
                    @endforeach
-                   
-
-
                 </div>
                 <div class="text-center mt-5">
                     <a href="course.html" class="lab-btn"><span>Browse All Categories</span></a>
@@ -141,7 +137,7 @@
                                         </ul>
                                     </div>
                                     <div class="course-content">
-                                        <a href="course-single.html">
+                                        <a href="/courses/{{str_replace(' ', '-', $data->title)}}">
                                             <h4>{{$data->title}}</h4>
                                         </a>
                                         {{-- <div class="course-details">
@@ -149,7 +145,7 @@
                                             <div class="couse-topic"><i class="icofont-speech-comments"></i> 23</div>
                                         </div> --}}
                                         <br>
-                                        <a href="course-single.html" class="lab-btn"><span>Read More</span></a>
+                                        <a href="/courses/{{str_replace(' ', '-', $data->title)}}" class="lab-btn"><span>Read More</span></a>
                                     </div>
                                 </div>
                             </div>
