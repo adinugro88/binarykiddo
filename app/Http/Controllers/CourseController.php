@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\Kategoris;
 use App\Models\Contact;
 use App\Models\Kelas;
+use Illuminate\Support\Str;
 
 class CourseController extends Controller
 {
@@ -49,9 +50,16 @@ class CourseController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($title)
+    public function show($param)
     {
-        return view("coursesdetail");
+       //dd(Str::replace('-', ' ', $param));
+       //dd($param);
+       $contact = Contact::First();
+       $cek = Str::replace('-', ' ', $param);
+       $program = Kelas::where('title',$cek)->first();
+       //dd($program);
+
+       return view("coursesdetail",compact('program','contact'));
     }
 
     /**
