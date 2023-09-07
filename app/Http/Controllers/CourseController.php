@@ -19,7 +19,7 @@ class CourseController extends Controller
     {
         $kategori = Kategoris::all();
         $contact = Contact::First();
-        $program = Kelas::paginate(10);
+        $program = Kelas::all();
         return view("courses",compact('kategori','contact','program'));
     }
 
@@ -60,6 +60,19 @@ class CourseController extends Controller
        //dd($program);
 
        return view("coursesdetail",compact('program','contact'));
+    }
+
+    public function category(Request $request)
+    {
+       //dd(Str::replace('-', ' ', $param));
+       //dd($param);
+       $kategori = Kategoris::all();
+       $category = $request->category;
+       $contact = Contact::First();
+       $program = Kelas::where('kategori',$category)->first();
+       dd($program);
+
+       return view("coursecategory",compact('program','contact','kategori'));
     }
 
     /**

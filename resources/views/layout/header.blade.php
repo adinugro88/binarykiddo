@@ -53,9 +53,9 @@
                         <li>
                             <i class="icofont-ui-call"></i> <span> {{$contact->handphone}}</span>
                         </li>
-                        <li>
+                        {{-- <li>
                             <i class="icofont-email"></i> <span>{{$contact->email}}</span>
-                        </li>
+                        </li> --}}
                         <li>
                             <i class="icofont-location-pin"></i> {{$contact->address}}
                         </li>
@@ -85,6 +85,10 @@
                                 
                                 <li>
                                     <a href="/about">About</a>
+                                   
+                                </li>
+                                <li>
+                                    <a href="/promo&event">Promo & Event </a>
                                    
                                 </li>
                                 <li>

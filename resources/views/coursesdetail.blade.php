@@ -7,7 +7,6 @@
             <div class="col-lg-7 col-12">
                 <div class="pageheader-thumb">
                     <img src="{{Voyager::image($program->picture)}}" alt="{{$program->title}}" class="w-100">
-                   
                 </div>
             </div>
             <div class="col-lg-5 col-12">
@@ -35,23 +34,12 @@
                     <div class="course-item">
                         <div class="course-inner">
                             <div class="course-content">
-                                <h3></h3>
-                                <p>In this course take you from the fundamentals and concepts of data modeling all the way through anumber of best practices and techniques that you’ll need to build data models in your organization. You’ll find many By the end of the course, you’ll be all set to not only put these principles to works but also to maike the key data modeling and design decisions required by the info data modeling that transcend the nuts-and-bolts that clearly the key covered the course and design patterns.</p>
-                                <h4>What You'll Learn in This Course:</h4>
-                                <ul class="lab-ul">
-                                    <li><i class="icofont-tick-mark"></i>Ready to begin working on real-world data modeling projects</li>
-                                    <li><i class="icofont-tick-mark"></i>Expanded responsibilities as part of an existing role</li>
-                                    <li><i class="icofont-tick-mark"></i>Be able to create Flyers, Brochures, Advertisements</li>
-                                    <li><i class="icofont-tick-mark"></i>Find a new position involving data modeling.</li>
-                                    <li><i class="icofont-tick-mark"></i>Work with color and Gradients and Grids</li>
-                                </ul>
-                                <p>In this course take you from the fundamentals and concepts of data modeling all the way through anumber  of best practices and techniques that you’ll need to build data models in your organization. You’ll find many examples that clearly the key covered the course</p>
-                                <p>By the end of the course, you’ll be all set to not only put these principles to works but also to maike the key data modeling and design decisions required by the info data modeling that transcend the nuts-and-bolts that clearly the key covered the course and design patterns.</p>
+                              {!!($program->body)!!}
                             </div>
                         </div>
                     </div>
 
-                    <div class="course-video">
+                    {{-- <div class="course-video">
                         <div class="course-video-title">
                             <h4>Course Content</h4>
                         </div>
@@ -208,11 +196,11 @@
                                 <button type="submit" class="lab-btn"><span>Submit Review</span></button>
                             </form>
                         </div>			
-                    </div>
+                    </div> --}}
                 </div>
             </div>
             <div class="col-lg-4">
-                <div class="sidebar-part">
+                {{-- <div class="sidebar-part">
                     <div class="course-side-detail">
                         <div class="csd-title">
                             <div class="csdt-left">
@@ -343,7 +331,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> --}}
             </div>
         </div>
     </div>

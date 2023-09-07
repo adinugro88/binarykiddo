@@ -100,299 +100,12 @@
     </div>
     <!-- category section start here -->
 
-
-    <!-- course section start here -->
-    <div class="course-section style-3 padding-tb">
-        <div class="course-shape one"><img src="assets/images/shape-img/icon/01.png" alt="education"></div>
-        <div class="course-shape two"><img src="assets/images/shape-img/icon/02.png" alt="education"></div>
-        <div class="container">
-            <div class="section-header">
-                <h2 class="title">Promo & Event</h2>
-                
-            </div>
-            <div class="section-wrapper">
-                <div class="row g-4 justify-content-center row-cols-xl-4 row-cols-lg-3 row-cols-md-2 row-cols-1 course-filter">
-                    <div class="col english">
-                        <div class="course-item style-4">
-                            <div class="course-inner">
-                                <div class="course-thumb">
-                                    <img src="assets/images/course/16.jpg" alt="course">
-                                    <div class="course-category">
-                                        <div class="course-cate">
-                                            <a href="#">English</a>
-                                        </div>
-                                        <div class="course-reiew">
-                                            <span class="ratting">
-                                                <i class="icofont-ui-rating"></i>
-                                                <i class="icofont-ui-rating"></i>
-                                                <i class="icofont-ui-rating"></i>
-                                                <i class="icofont-ui-rating"></i>
-                                                <i class="icofont-ui-rating"></i>
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="course-content">
-                                    <a href="course-single.html"><h5>Basic English Spoken and Writing</h5></a>
-                                    <div class="course-footer">
-                                        <div class="course-author">
-                                            <img src="assets/images/course/author/01.jpg" alt="course author">
-                                            <a href="team-single.html" class="ca-name">William Smith</a>
-                                        </div>
-                                        <div class="course-price">$19.00</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col software">
-                        <div class="course-item style-4">
-                            <div class="course-inner">
-                                <div class="course-thumb">
-                                    <img src="assets/images/course/17.jpg" alt="course">
-                                    <div class="course-category">
-                                        <div class="course-cate">
-                                            <a href="#">Software</a>
-                                        </div>
-                                        <div class="course-reiew">
-                                            <span class="ratting">
-                                                <i class="icofont-ui-rating"></i>
-                                                <i class="icofont-ui-rating"></i>
-                                                <i class="icofont-ui-rating"></i>
-                                                <i class="icofont-ui-rating"></i>
-                                                <i class="icofont-ui-rating"></i>
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="course-content">
-                                    <a href="course-single.html"><h5>Learn Advance with PHP Language</h5></a>
-                                    <div class="course-footer">
-                                        <div class="course-author">
-                                            <img src="assets/images/course/author/02.jpg" alt="course author">
-                                            <a href="team-single.html" class="ca-name">Zarina Bobro</a>
-                                        </div>
-                                        <div class="course-price">$19.00</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col design">
-                        <div class="course-item style-4">
-                            <div class="course-inner">
-                                <div class="course-thumb">
-                                    <img src="assets/images/course/18.jpg" alt="course">
-                                    <div class="course-category">
-                                        <div class="course-cate">
-                                            <a href="#">Design</a>
-                                        </div>
-                                        <div class="course-reiew">
-                                            <span class="ratting">
-                                                <i class="icofont-ui-rating"></i>
-                                                <i class="icofont-ui-rating"></i>
-                                                <i class="icofont-ui-rating"></i>
-                                                <i class="icofont-ui-rating"></i>
-                                                <i class="icofont-ui-rating"></i>
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="course-content">
-                                    <a href="course-single.html"><h5>Logo Design in Adobe Illustrator</h5></a>
-                                    <div class="course-footer">
-                                        <div class="course-author">
-                                            <img src="assets/images/course/author/03.jpg" alt="course author">
-                                            <a href="team-single.html" class="ca-name">Nestor Maslov</a>
-                                        </div>
-                                        <div class="course-price">$19.00</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col photography">
-                        <div class="course-item style-4">
-                            <div class="course-inner">
-                                <div class="course-thumb">
-                                    <img src="assets/images/course/19.jpg" alt="course">
-                                    <div class="course-category">
-                                        <div class="course-cate">
-                                            <a href="#">Photography</a>
-                                        </div>
-                                        <div class="course-reiew">
-                                            <span class="ratting">
-                                                <i class="icofont-ui-rating"></i>
-                                                <i class="icofont-ui-rating"></i>
-                                                <i class="icofont-ui-rating"></i>
-                                                <i class="icofont-ui-rating"></i>
-                                                <i class="icofont-ui-rating"></i>
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="course-content">
-                                    <a href="course-single.html"><h5>Digital Photography for Beginner</h5></a>
-                                    <div class="course-footer">
-                                        <div class="course-author">
-                                            <img src="assets/images/course/author/04.jpg" alt="course author">
-                                            <a href="team-single.html" class="ca-name">Rose Repina</a>
-                                        </div>
-                                        <div class="course-price">$19.00</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col marketing">
-                        <div class="course-item style-4">
-                            <div class="course-inner">
-                                <div class="course-thumb">
-                                    <img src="assets/images/course/20.jpg" alt="course">
-                                    <div class="course-category">
-                                        <div class="course-cate">
-                                            <a href="#">Marketing</a>
-                                        </div>
-                                        <div class="course-reiew">
-                                            <span class="ratting">
-                                                <i class="icofont-ui-rating"></i>
-                                                <i class="icofont-ui-rating"></i>
-                                                <i class="icofont-ui-rating"></i>
-                                                <i class="icofont-ui-rating"></i>
-                                                <i class="icofont-ui-rating"></i>
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="course-content">
-                                    <a href="course-single.html"><h5>Advance Social  Media Marketing</h5></a>
-                                    <div class="course-footer">
-                                        <div class="course-author">
-                                            <img src="assets/images/course/author/05.jpg" alt="course author">
-                                            <a href="team-single.html" class="ca-name">Muslim Voronk</a>
-                                        </div>
-                                        <div class="course-price">$19.00</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col music">
-                        <div class="course-item style-4">
-                            <div class="course-inner">
-                                <div class="course-thumb">
-                                    <img src="assets/images/course/21.jpg" alt="course">
-                                    <div class="course-category">
-                                        <div class="course-cate">
-                                            <a href="#">Music</a>
-                                        </div>
-                                        <div class="course-reiew">
-                                            <span class="ratting">
-                                                <i class="icofont-ui-rating"></i>
-                                                <i class="icofont-ui-rating"></i>
-                                                <i class="icofont-ui-rating"></i>
-                                                <i class="icofont-ui-rating"></i>
-                                                <i class="icofont-ui-rating"></i>
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="course-content">
-                                    <a href="course-single.html"><h5>A Guidelines Complete Guitar System</h5></a>
-                                    <div class="course-footer">
-                                        <div class="course-author">
-                                            <img src="assets/images/course/author/06.jpg" alt="course author">
-                                            <a href="team-single.html" class="ca-name">Zoe Muravyova</a>
-                                        </div>
-                                        <div class="course-price">$19.00</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col design">
-                        <div class="course-item style-4">
-                            <div class="course-inner">
-                                <div class="course-thumb">
-                                    <img src="assets/images/course/22.jpg" alt="course">
-                                    <div class="course-category">
-                                        <div class="course-cate">
-                                            <a href="#">Design</a>
-                                        </div>
-                                        <div class="course-reiew">
-                                            <span class="ratting">
-                                                <i class="icofont-ui-rating"></i>
-                                                <i class="icofont-ui-rating"></i>
-                                                <i class="icofont-ui-rating"></i>
-                                                <i class="icofont-ui-rating"></i>
-                                                <i class="icofont-ui-rating"></i>
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="course-content">
-                                    <a href="course-single.html"><h5>Learn Piano Guidelines System A to Z</h5></a>
-                                    <div class="course-footer">
-                                        <div class="course-author">
-                                            <img src="assets/images/course/author/01.jpg" alt="course author">
-                                            <a href="team-single.html" class="ca-name">William Smith</a>
-                                        </div>
-                                        <div class="course-price">$19.00</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col software">
-                        <div class="course-item style-4">
-                            <div class="course-inner">
-                                <div class="course-thumb">
-                                    <img src="assets/images/course/23.jpg" alt="course">
-                                    <div class="course-category">
-                                        <div class="course-cate">
-                                            <a href="#">Software</a>
-                                        </div>
-                                        <div class="course-reiew">
-                                            <span class="ratting">
-                                                <i class="icofont-ui-rating"></i>
-                                                <i class="icofont-ui-rating"></i>
-                                                <i class="icofont-ui-rating"></i>
-                                                <i class="icofont-ui-rating"></i>
-                                                <i class="icofont-ui-rating"></i>
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="course-content">
-                                    <a href="course-single.html"><h5>Advance Professional Graphic Design</h5></a>
-                                    <div class="course-footer">
-                                        <div class="course-author">
-                                            <img src="assets/images/course/author/02.jpg" alt="course author">
-                                            <a href="team-single.html" class="ca-name">Nora Yurieva</a>
-                                        </div>
-                                        <div class="course-price">$19.00</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- course section ending here -->
-
-
-
-  
-  
-
-    <!-- Course Section Start Here -->
-    <div class="course-section style-2 padding-tb section-bg-ash yellow-color-section">
+     <!-- Course Section Start Here -->
+     <div class="course-section style-2 padding-tb section-bg-ash yellow-color-section">
         <div class="container">
             <div class="section-header">
                 <span class="subtitle yellow-color">Don’t Miss</span>
-                <h2 class="title">Our Courses</h2>
+                <h2 class="title">Promo & Event</h2>
                 <div class="course-navigations">
                     <div class="course-navi course-navi-next"><i class="icofont-double-left"></i></div>
                     <div class="course-navi course-navi-prev"><i class="icofont-double-right"></i></div>
@@ -401,24 +114,13 @@
             <div class="section-wrapper">
                 <div class="course-slider p-2">
                     <div class="swiper-wrapper">
-                        @foreach ($program as $data)
+                        @foreach ($promo as $data)
                         <div class="swiper-slide">
                             <div class="course-item style-3">
                                 <div class="course-inner text-center">
                                     <div class="course-thumb">
-                                        <img src="{{Voyager::image($data->picture)}}" alt="course">
-                                        <ul class="course-info lab-ul">
-                                            <li><span class="course-name">{{$data->kategori}}</span></li>
-                                            {{-- <li>
-                                                <span class="ratting">
-                                                    <i class="icofont-ui-rate-blank"></i>
-                                                    <i class="icofont-ui-rate-blank"></i>
-                                                    <i class="icofont-ui-rate-blank"></i>
-                                                    <i class="icofont-ui-rate-blank"></i>
-                                                    <i class="icofont-ui-rate-blank"></i>
-                                                </span>
-                                            </li> --}}
-                                        </ul>
+                                        <img src="{{Voyager::image($data->thumbnail)}}" alt="course">
+                                        
                                     </div>
                                     <div class="course-content">
                                         <a href="/course/{{str_replace(' ', '-', $data->title)}}">
@@ -435,6 +137,30 @@
                             </div>
                         </div>
                         @endforeach
+                        @foreach ($event as $data)
+                        <div class="swiper-slide">
+                            <div class="course-item style-3">
+                                <div class="course-inner text-center">
+                                    <div class="course-thumb">
+                                        <img src="{{Voyager::image($data->thumbnail)}}" alt="course">
+                                        
+                                    </div>
+                                    <div class="course-content">
+                                        <a href="/course/{{str_replace(' ', '-', $data->title)}}">
+                                            <h4>{{$data->title}}</h4>
+                                        </a>
+                                        {{-- <div class="course-details">
+                                            <div class="couse-count"><i class="icofont-users-alt-3"></i> 200</div>
+                                            <div class="couse-topic"><i class="icofont-speech-comments"></i> 23</div>
+                                        </div> --}}
+                                        <br>
+                                        <a href="/course/{{str_replace(' ', '-', $data->title)}}" class="lab-btn"><span>Read More</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        @endforeach
+                        
                        
                        
                     </div>
@@ -443,6 +169,56 @@
         </div>
     </div>
     <!-- Course Section Ending Here -->
+
+    <!-- course section start here -->
+    <div class="course-section style-3 padding-tb">
+        <div class="course-shape one"><img src="assets/images/shape-img/icon/01.png" alt="education"></div>
+        <div class="course-shape two"><img src="assets/images/shape-img/icon/02.png" alt="education"></div>
+        <div class="container">
+            <div class="section-header">
+                <h2 class="title">Course</h2>
+                
+            </div>
+            <div class="section-wrapper">
+                <div class="row g-4 justify-content-center row-cols-xl-4 row-cols-lg-3 row-cols-md-2 row-cols-1 course-filter">
+                    
+                    @foreach ($program as $item)
+                    <div class="col english">
+                        <div class="course-item style-4">
+                            <div class="course-inner">
+                                <div class="course-thumb">
+                                    <img src="{{Voyager::image($item->picture)}}" alt="course">
+                                    <div class="course-category">
+                                        <div class="course-cate">
+                                            <a href="#">{{$item->kategori}}</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="course-content">
+                                    <a href="/course/{{str_replace(' ', '-', $item->title)}}"><h5>{{$item->title}}</h5></a>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    @endforeach
+                  
+                    <div class="col-12 text-center">
+                        <a href="/course" class="lab-btn"><span>See More</span></a>
+                    </div>
+                  
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- course section ending here -->
+
+
+
+  
+  
+
+   
 
 
     <!-- student feedbak section start here -->

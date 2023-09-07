@@ -19,6 +19,7 @@ use App\Http\Controllers\ContactController;
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/about', [AboutController::class, 'index'])->name('about');
 Route::get('/course', [CourseController::class, 'index'])->name('course');
+Route::get('/coursecategory', [CourseController::class, 'category'])->name('coursecategory');
 Route::get('/course/{param}', [CourseController::class, 'show'])->name('coursedetail');
 Route::get('/contact', [ContactController::class, 'index'])->name('contact');
 Route::group(['prefix' => 'admin'], function () {
