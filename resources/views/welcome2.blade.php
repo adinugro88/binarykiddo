@@ -23,7 +23,7 @@
                 </div>
                 <div class="col-xxl-7 col-xl-6">
                     <div class="banner-thumb">
-                        <img src="{{asset('01-min.png')}}" alt="img">
+                        <img src="{{Voyager::image($banner->gambar) }}" alt="img">
                     </div>
                 </div>
             </div>
