@@ -69,8 +69,8 @@ class CourseController extends Controller
        $kategori = Kategoris::all();
        $category = $request->category;
        $contact = Contact::First();
-       $program = Kelas::where('kategori',$category)->first();
-       dd($program);
+       $program = Kelas::where('kategori',$category)->get();
+       //dd($program);
 
        return view("coursecategory",compact('program','contact','kategori'));
     }

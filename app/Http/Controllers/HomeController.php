@@ -13,6 +13,7 @@ use App\Models\Picturetool;
 use App\Models\Kategoris;
 use App\Models\Event;
 use App\Models\Promo;
+use App\Models\Partner;
 
 
 class HomeController extends Controller
@@ -29,13 +30,14 @@ class HomeController extends Controller
         $point = Point::orderBy('id', 'ASC')->get();
         $founder = Founder::First();
         $picture = Picturetool::all();
+        $partner = Partner::all();
         $contact = Contact::First();
         $program = Kelas::where("show","show")->limit(8)->get();
         $kategori = Kategoris::where("show","show")->get();
         $event = Event::all();
         $promo = Promo::all();
         //dd($kelas);
-        return view('welcome2', compact('kategori','about','banner','point','founder','program','contact','picture','promo','event'));
+        return view('welcome2', compact('kategori','partner','about','banner','point','founder','program','contact','picture','promo','event'));
     }
 
     /**

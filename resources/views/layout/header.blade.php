@@ -74,7 +74,7 @@
             <div class="container">
                 <div class="header-wrapper">
                     <div class="logo">
-                        <a href="index.html"><img src="{{ Voyager::image( $contact->logo ) }}" alt="logo" width="100"></a>
+                        <a href="/"><img src="{{ Voyager::image( $contact->logo ) }}" alt="logo" width="100"></a>
                     </div>
                     <div class="menu-area">
                         <div class="menu">
